@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Winery: Your Shopping Cart</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.shop.js"></script>
+<script src="https://kit.fontawesome.com/41f04fa50a.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Rubik:700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="site">
+	<div class="header">
+		<a href="index.html"><img class="header-logo" src="images/logo.gif"></a>
+	</div>
+	<div id="mySidenav" class="sidenav">
+		<a href="cart.html" id="cart-icon"><span class="fas fa-shopping-cart"></span></a>
+		<a href="index.html">Home</a>
+		<a href="#">New Collection</a>
+		<a href="#">Shirts</a>
+		<a href="#">Hoodies</a>
+		<a href="#" id="about">About</a>
+		<div class="navbutton-container" onclick="toggleNav()">
+			<span id="navbutton" class="fas fa-chevron-right" ></span>
+		</div>
+	</div>
+	<div id="content">
+		<h1>Your Shopping Cart</h1>
+		<form id="shopping-cart" action="cart.html" method="get">
+			<table class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col">Item</th>
+					<th scope="col">Qty</th>
+					<th scope="col" colspan="2">Price</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  
+			  </tbody>
+			</table>
+			<p id="sub-total">
+				<strong>Sub Total</strong>: <span id="stotal"></span>
+			</p>
+			<ul id="shopping-cart-actions">
+				<li>
+					<input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
+				</li>
+				<li>
+					<input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
+				</li>
+				<li>
+					<a href="index.html" class="btn">Continue Shopping</a>
+				</li>
+				<li>
+					<a href="checkout.html" class="btn">Go To Checkout</a>
+				</li>
+			</ul>
+		</form>
+	</div>
+	
+	
+
+</div>
+
+<footer id="site-info">
+		Copyright &copy; Winery
+	</footer>
+
+</body>
+</html>	
